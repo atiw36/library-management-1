@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Library Managment" default="main" basedir=".">
+ 
+<target name="clean" >
+       <delete dir="build/classes"/>
+       <delete dir="report"/>
+       <echo> Clean executed................ </echo>
+</target>
+        <target name="compile" depends="clean">
+              <mkdir dir="build/classes"/>
+              <javac srcdir="." destdir="build/classes"/>
+              <echo> Compile executed................ </echo>
+       </target> 
+</project> 
